@@ -1,0 +1,41 @@
+<h1>Hello World</h1>
+
+<span
+    class="bi icon-sizing"
+    [class.bi-star-fill]="isFavorite"
+    [class.bi-star]="!isFavorite"
+    (click)="onClick()"
+></span>
+
+<span class="bi bi-star-fill"></span>
+<span class="bi bi-star"></span>
+
+ngClass:
+<span
+    class="bi icon-sizing"
+    [ngClass]="{
+        'bi-star-fill': isFavorite,
+        'bi-star': !isFavorite
+    }"
+    (click)="onClick()"
+></span>
+
+ngStyle:
+<button
+    [ngStyle]="{
+        'backgroundColor': isFavorite ? 'blue' : 'gray',
+        'color': isFavorite ? 'white' : 'black',
+        'fontWeight': isFavorite ? 'bold' : 'normal'
+    }"
+>
+    Save
+</button>
+
+<p>favourite works!</p>
+
+
+<!-- Zen coding: -->
+<!--div.panel.panel-default>div.panel-heading+div.panel -->
+
+<!-- ng-content -->
+<!-- ng-container -->

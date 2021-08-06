@@ -1,0 +1,13 @@
+<nav 
+    [style.backgroundColor]="backgroundColor"
+    class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li routerLinkActive="active" class="btn btn-secondary"><a routerLink="followers" [queryParams]="{ page:1, order: 'newest' }">Followers</a></li>
+                <li routerLinkActive="active" class="btn btn-secondary"><a routerLink="posts/">Posts</a></li>
+            </ul>
+        </div>
+        <h1>navbar works</h1>
+    </div>
+</nav>
